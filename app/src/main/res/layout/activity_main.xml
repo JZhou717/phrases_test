@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/buttonHello"
+        android:text="Hello"
+        android:tag="hello"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintWidth_percent=".5"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="playSound" />
+
+    <Button
+        android:id="@+id/buttonDoYouSpeakEnglish"
+        android:text="Do You Speak English"
+        android:tag="do you speak english"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintWidth_percent=".5"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="playSound" />
+
+    <Button
+        android:id="@+id/buttonGoodEvening"
+        android:text="Good Evening"
+        android:tag="good evening"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintWidth_percent=".5"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonHello"
+        android:onClick="playSound" />
+
+    <Button
+        android:id="@+id/buttonHowAreYou"
+        android:text="How Are You"
+        android:tag="how are you"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintWidth_percent=".5"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonDoYouSpeakEnglish"
+        android:onClick="playSound" />
+
+    <Button
+        android:id="@+id/buttonILiveIn"
+        android:text="I Live In"
+        android:tag="i live in"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintWidth_percent=".5"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonGoodEvening"
+        android:onClick="playSound" />
+
+    <Button
+        android:id="@+id/buttonMyNameIs"
+        android:text="MyNameIs"
+        android:tag="my name is"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintWidth_percent=".5"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonHowAreYou"
+        android:onClick="playSound" />
+
+    <Button
+        android:id="@+id/buttonPlease"
+        android:text="Please"
+        android:tag="please"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintWidth_percent=".5"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonILiveIn"
+        android:onClick="playSound" />
+
+    <Button
+        android:id="@+id/buttonWelcome"
+        android:text="Welcome"
+        android:tag="welcome"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintWidth_percent=".5"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonMyNameIs"
+        android:onClick="playSound" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
